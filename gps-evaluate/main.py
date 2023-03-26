@@ -39,8 +39,8 @@ def show_map(valid_lat_group, valid_lon_group, invalid_lat_group, invalid_lon_gr
         accesstoken=mapbox_access_token,
         bearing=0,
         center=go.layout.mapbox.Center(
-            lat=55,
-            lon=37
+            lat=int(lat_tst),
+            lon=int(lon_tst)
         ),
         pitch=0,
         zoom=5
